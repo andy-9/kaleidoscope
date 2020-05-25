@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    background: rgb(30, 215, 96, 0.7);
+    margin: 2em 2em 0 2em;
+}
+
+h1 {
+    font-family: "Baloo 2", cursive;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Baloo 2", cursive;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+input {
+    font-family: "Baloo 2", cursive;
+    width: 20em;
+    height: 36px;
+    font-size: 20px;
+    padding-left: 4px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+}
+
+select {
+    font-family: "Baloo 2", cursive;
+    font-size: 20px;
+    border-bottom-width: 0;
+    border-color: white;
+    margin: 0 1em;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    height: 36px;
+}
+
+#artist {
+    font-family: "Baloo 2", cursive;
+}
+
+#album {
+    font-family: "Baloo 2", cursive;
+}
+
+#submit-btn {
+    font-size: 20px;
+    font-family: "Baloo 2", cursive;
+    background-color: white;
+    width: 100px;
+    height: 36px;
+    border: 0.5px solid black;
+    padding: 0;
+    border-radius: 25px;
+}
+
+#submit-btn:focus {
+    outline: none;
+}
+
+#submit-btn:hover {
+    background-color: rgba(167, 143, 143, 0.5);
+    color: white;
+    border: 0.5px solid white;
+}
+
+#results-container {
+    font-family: "Baloo 2", cursive;
+    margin: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.cover {
+    width: 12em;
+    height: 12em;
+}
+
+.cover:hover {
+    transform: scale(1.05);
+}
+
+.album {
+    max-width: 12em;
+    margin-bottom: 3em;
+    font-family: "Baloo 2", cursive;
+    color: white;
+    text-align: center;
+}
+
+.album:hover {
+    color: blue;
+    text-decoration: underline blue;
+}
+
+#more-btn {
+    font-size: 20px;
+    font-family: "Baloo 2", cursive;
+    background-color: white;
+    width: 100px;
+    height: 36px;
+    border: 0.5px solid black;
+    border-radius: 25px;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-bottom: 50px;
+    visibility: hidden;
+}
+
+#more-btn:focus {
+    outline: none;
+}
+
+#more-btn:hover {
+    background-color: rgba(167, 143, 143, 0.5);
+    color: white;
+    border: 0.5px solid white;
+}

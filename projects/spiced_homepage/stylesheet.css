@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, Times, serif;
+}
+
+header {
+    height: 60px;
+    padding: 10px;
+    color: #ffffff;
+    margin: 0;
+}
+
+#logo {
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+#hamburger {
+    display: inline-block;
+    position: fixed;
+    height: 30px;
+    top: 10px;
+    right: 20px;
+}
+
+#hamburger:hover {
+    background-color: lightgrey;
+}
+
+.section1 {
+    background: url(spices.jpg);
+    background-size: cover;
+    height: 750px;
+    background-clip: border-box;
+    z-index: 1;
+}
+
+h1 {
+    color: #ffffff;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    font-size: 45px;
+    top: 360px;
+    position: absolute;
+    z-index: 3;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+#button {
+    width: 250px;
+    height: 40px;
+    font-size: 24px;
+    color: #cf6c03;
+    text-align: center;
+    background-color: #ffcc33;
+    padding-top: 4px;
+    border: 2px solid #cf6c03;
+    border-radius: 20px;
+    top: 440px;
+    position: absolute;
+    margin: 0 auto;
+    display: block;
+    left: 0;
+    right: 0;
+}
+
+#button:hover {
+    background-color: lightgrey;
+}
+
+.section2 {
+    background-color: lightgrey;
+    padding: 20px 30px 30px 100px;
+    border: 0;
+    margin: 0;
+    height: 230px;
+    font-size: 16px;
+}
+
+.block {
+    display: inline-block;
+    /* width: 690px; */
+    width: 530px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+.cat,
+.swim,
+.world,
+.columns {
+    height: 35px;
+}
+
+.section2 p {
+    height: 0px;
+    width: 480px;
+    padding: 10px;
+    position: relative;
+    bottom: 50px;
+    left: 45px;
+    margin: 0;
+}
+
+footer {
+    height: 30px;
+    color: lightgrey;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    text-indent: 30px;
+    background-color: #666666;
+}
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+    header {
+        height: 30px;
+        position: relative;
+    }
+
+    #logo {
+        height: 20px;
+        top: 15px;
+        left: 15px;
+    }
+
+    #hamburger {
+        height: 20px;
+        position: relative;
+        top: 5px;
+        right: -260px;
+    }
+
+    .section1 {
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 18px;
+        top: 75px;
+        padding: 0 50px;
+    }
+
+    #button {
+        width: 130px;
+        height: 22px;
+        font-size: 17px;
+        padding-top: 3px;
+        top: 145px;
+    }
+
+    .section2 {
+        padding: 20px 30px 30px 30px;
+        height: 350px;
+        font-size: 12px;
+    }
+
+    .cat,
+    .swim,
+    .world,
+    .columns {
+        height: 28px;
+    }
+
+    .section2 p {
+        width: 180px;
+        padding: 15px;
+        left: 35px;
+    }
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-menu {
+    background-color: rgb(0, 0, 0, 0.425); /* last number: opaque */
+    /* background-color: black;
+    opacity: 0.425; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+
+#hamburger-menu.on {
+    visibility: visible;
+}
+
+#menu {
+    padding: 20px;
+    height: 100%;
+    width: 350px;
+    max-width: 50%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+}
+
+.on #menu {
+    transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+.hyperlinks {
+    margin: 10px 0;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: blue;
+}
+
+#x {
+    position: absolute;
+    right: 10px;
+    margin: 0;
+    top: 0px;
+    color: grey;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+/* MODAL DIALOG */
+
+#modal {
+    background-color: white;
+    position: absolute;
+    margin: 0 auto;
+    display: block;
+    top: 250px;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    border-radius: 10px;
+    padding: 40px;
+    width: 800px;
+    height: 350px;
+    visibility: hidden;
+}
+
+#xx {
+    position: absolute;
+    right: 10px;
+    margin: 0;
+    top: 0px;
+    color: grey;
+    font-size: 24px;
+}
+
+#welcome {
+    color: black;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#tour,
+#cookies {
+    color: black;
+    font-size: 24px;
+}
+
+#darkness {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+}

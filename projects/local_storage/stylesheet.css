@@ -1,0 +1,108 @@
+* {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: rgb(2, 216, 195, 0.3);
+}
+
+h1 {
+    padding: 1em;
+    font-family: "Indie Flower", cursive;
+    color: white;
+    font-size: 60px;
+    text-shadow: 0 0 9px black;
+}
+
+textarea {
+    width: 40em;
+    height: 10em;
+    /* border: 1px solid #cccccc; */
+    margin-bottom: 2em;
+    font-family: "Lato", sans-serif;
+    font-size: 26px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+}
+
+textarea:focus {
+    background: rgb(245, 243, 243);
+    outline: none;
+}
+
+textarea::placeholder {
+    font-size: 20px;
+}
+
+section {
+    width: 40em;
+}
+
+button:focus {
+    outline: none;
+}
+
+.one,
+.two {
+    font-family: "Comic Neue", cursive;
+    font-size: 30px;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    border-radius: 2em;
+    outline: none;
+    margin: 1em;
+}
+
+.one {
+    background-color: white;
+    color: rgb(2, 216, 195);
+    border: 4px solid grey;
+}
+
+.one:hover {
+    background-color: rgb(2, 216, 195);
+    color: white;
+}
+
+.two {
+    color: rgb(2, 216, 195);
+    background-color: grey;
+    border: 4px solid white;
+}
+
+.two:hover {
+    background-color: rgb(2, 216, 195);
+    color: white;
+    border: 4px solid white;
+}
+
+.three {
+    font-family: "Comic Neue", cursive;
+    font-size: 30px;
+    width: 700px;
+    height: 60px;
+    text-align: center;
+    border-radius: 2em;
+    outline: none;
+    margin: 1em;
+    color: white;
+    /* rgb(2, 216, 195); */
+    background-color: rgb(2, 216, 195);
+    border: 4px solid white;
+}
+
+.three:hover {
+    background-color: grey;
+    color: white;
+    border: 4px solid rgb(2, 216, 195);
+}

@@ -1,0 +1,15 @@
+{{#projects}}
+    <div class="imagename">
+        {{#if ../images}}
+            <a target="_blank" href="/{{directory}}/description"><img class="imag" src="/{{directory}}/screenshot.png" alt="{{selectedProject.name}}"></a>
+            <br>
+        {{/if}}
+        {{!-- {{#if ../separator}}
+            <div class="separator">|</div>
+        {{/if}} --}}
+        <b><a target="_blank" class="hyperlink" href="/{{directory}}/description">{{name}}</a></b>
+    </div>
+{{/projects}}
+
+
+{{!-- toUpperCase --}}

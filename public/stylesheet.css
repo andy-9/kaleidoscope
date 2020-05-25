@@ -1,0 +1,210 @@
+/* BASIC STRUCTURE OF SITE: HTML, BODY, HEADER */
+* {
+    /* width: 100vw; */
+    box-sizing: border-box;
+    margin: 20;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    background: rgb(243, 187, 4);
+    /* background: linear-gradient(
+        rgb(2, 212, 191),
+        rgb(164, 243, 235),
+        rgb(2, 212, 191)
+    ); */
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+header {
+    height: 70px;
+}
+
+main {
+    margin-top: 30px;
+    margin: 0 auto;
+}
+
+/* WELCOME SITE */
+#welcomestyle {
+    width: 80%;
+    /* left: 50%; */
+    transform: translate(20%, 0);
+}
+
+/* CONTAINER FOR PROJLIST (IMAGE & NAME) */
+.imagename {
+    margin: 20px;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+}
+
+/* CONTAINER FOR DESCRIPTION SITE */
+#descontainer {
+    text-align: center;
+}
+
+/* ALL PROJECTS LISTED ON TOP OF DESCRIPTION SITE */
+.projList {
+    /* text-align: center; */
+    padding: 20px 0;
+}
+
+.projList .imagename {
+    margin: 5px;
+    width: 100px;
+    line-height: 80%;
+    vertical-align: middle;
+}
+
+.projList .hyperlink {
+    font-variant: small-caps;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.separator {
+    width: 0;
+    font-size: 80px;
+    padding-left: 100px;
+    position: absolute;
+    vertical-align: middle;
+}
+
+.projectsite {
+    margin: 5px;
+    text-decoration: none;
+}
+
+/* DESCRIPTION TEXT OF EACH PROJECT */
+.desc {
+    font-family: "Baloo 2", cursive;
+    font-size: 22px;
+    text-align: center;
+    padding: 20px 200px;
+}
+
+/* HEADLINES */
+h1 {
+    font-family: "Baloo 2", cursive;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Baloo 2", cursive;
+    color: white;
+    font-size: 40px;
+    padding-top: 30px;
+    text-decoration: none;
+    margin: 0;
+    /* text-align: center; */
+}
+
+h3 {
+    font-family: "Baloo 2", cursive;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 150px 50px 150px;
+}
+
+/* HYPERLINKS */
+.hyperlink,
+.projectsite {
+    font-family: "Baloo 2", cursive;
+    color: black;
+    text-decoration: none;
+}
+
+.hyperlink {
+    font-size: 22px;
+    font-variant: small-caps;
+}
+
+.projectsite {
+    font-size: 26px;
+}
+
+.hyperlink:hover,
+.projectsite:hover,
+.white:hover,
+#back:hover {
+    color: blue;
+    text-decoration: underline blue;
+}
+
+/* IMAGES */
+.imag {
+    height: 200px;
+    width: 300px;
+}
+
+.chosenimg {
+    height: 400px;
+    width: 600px;
+}
+
+img:hover {
+    transform: scale(1.02);
+    filter: brightness(120%);
+}
+
+/* FOOTER */
+footer {
+    font-family: "Baloo 2", cursive;
+    font-size: 16px;
+    color: white;
+    margin-top: 50px;
+}
+
+.contact {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.white {
+    color: white;
+    font-family: "Baloo 2", cursive;
+}
+
+i.fa.fa-github::before,
+i.fa.fa-linkedin-square::before,
+i.fa.fa-xing::before,
+i.fa.fa-twitter::before {
+    color: black;
+    font-size: 22px;
+}
+
+i.fa.fa-github #text {
+    font-family: "Baloo 2", cursive;
+    color: white;
+}
+
+#text {
+    font-family: "Baloo 2", cursive;
+    color: white;
+}
+
+#back {
+    text-align: none;
+    float: left;
+    margin: 5px;
+    color: black;
+}
+
+#copyright {
+    float: right;
+    color: black;
+}

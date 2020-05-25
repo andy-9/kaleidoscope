@@ -1,0 +1,30 @@
+* {
+    /* width: 100vw; */
+    box-sizing: border-box;
+    margin: 20;
+    padding: 20;
+}
+
+#noResult {
+    color: grey;
+    font-style: italic;
+    font-size: 14px;
+    /* background-color: none; */
+    /* text-decoration: none; */
+    /* cursor: not-allowed; */
+}
+
+.highlight {
+    background: lightgrey;
+    color: blue;
+    cursor: pointer;
+    width: 140px;
+}
+
+.results {
+    /* border: 1px solid grey; */
+    visibility: hidden;
+    width: 180px;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+}

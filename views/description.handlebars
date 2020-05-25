@@ -1,0 +1,24 @@
+<div id="descontainer">
+
+{{!-- All projects listed --}}
+    <div class="projList">
+        {{>projList separator=true}}
+    </div>
+
+    {{!-- <h3>{{bgc selectedProject}}</h3> --}}
+
+{{!-- Name of chosen project --}}
+    <h2>{{selectedProject.name}}</h2>
+
+{{!-- Description of chosen project --}}
+    <div class="desc">
+        {{selectedProject.description}}
+    </div>
+
+{{!-- Screenshot of chosen project --}}
+    <a href="/{{selectedProject.directory}}"><img class="chosenimg" src="/{{selectedProject.directory}}/screenshot.png" alt="{{selectedProject.name}}"></a>
+
+{{!-- Link to project --}}
+    <a href="/{{selectedProject.directory}}/"><p class="projectsite">Go to '{{selectedProject.name}}' project</p></a>
+
+</div>
