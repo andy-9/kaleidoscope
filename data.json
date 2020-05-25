@@ -2,7 +2,7 @@
     {
         "name": "Spotify Search",
         "directory": "spotify_search",
-        "description": "Still not having a Spotify account myself, nonetheless I programmed a user interface to search via an API the spotify database. When you search for an artist or album the first 20 search items are displayed with an image of the album and the name of the artist. If you've reached the bottom, you can click 'More' to load the next 20 items. I also added infinite scroll. I used jQuery, clickhandlers, several ajax 'GET'-requests and in CSS flexbox and all kinds of animations with pseudo-selectors - fun! I found it quite difficult to figure out the order when to call which function and that they don't interfere with each other. In the end I managed and if you click on the link below you have an unlimited supply of search results - hopefully YOU have a spotify account..."
+        "description": "Still not having a Spotify account myself, nonetheless I programmed a user interface to search via an API the spotify database. When you search for an artist or album the first 20 search items are displayed with an image of the album and the name of the artist. If you've reached the bottom, you can click 'More' to load the next 20 items. I also added infinite scroll. I used jQuery, clickhandlers, several ajax 'GET'-requests, CSS flexbox and all kinds of animations with pseudo-selectors - fun! I found it quite difficult to figure out the order when to call which function and that they don't interfere with each other. In the end I managed and if you click on the link below you have an unlimited supply of search results - hopefully YOU have a spotify account..."
     },
     {
         "name": "Resizable Panes",
@@ -27,17 +27,17 @@
     {
         "name": "Local Storage",
         "directory": "local_storage",
-        "description": "Working with local storage was fun. If you write something in the text field and click the button 'Keep it a secret!' the text disappears and the button cannot be clicked again (to keep what was saved to local storage). The button left to this ('Tell me the secret!') reveals what was saved, even after the browser was closed. The last button ('I don't trust you anymore - forget my secret!') clears the local storage and the console. I worked in jQuery with click handlers and try-catch error-handling."
+        "description": "Working with local storage was fun. If you write something in the text field and click the button 'Keep it a secret!' the text disappears and the button cannot be clicked again (to keep what was saved to local storage). The button left to this ('Tell me the secret!') reveals what was saved, even after the browser was closed. The last button ('I don't trust you anymore - forget my secret!') clears the local storage and the console. I worked with jQuery using click handlers and try-catch error-handling."
     },
     {
         "name": "JSON validator",
         "directory": "JSON_validator",
-        "description": "This simple validation test tells you if you have JSON or not. Simply copy-paste in the textfield and hit the 'Validate JSON' button. If you have JSON, the border of the textfield turns into green and a 'Valid JSON!' text blinks at the bottom of the textfield. If you don't have valid JSON, the border turns red and it will let you know that you do not have valid JSON. 'Clear textarea' to test some more... Done in jQuery with the parse()-method and flexbox and keyframes in CSS."
+        "description": "This simple validation test tells you if you have JSON or not. Simply copy-paste in the textfield and hit the 'Validate JSON' button. If you have JSON, the border of the textfield turns into green and a 'Valid JSON!' text blinks at the bottom of the textfield. If you don't have valid JSON, the border turns red and it will let you know that you do not have valid JSON. 'Clear textarea' to test some more... Done with jQuery with the parse()-method and flexbox and keyframes in CSS."
     },
     {
         "name": "Ticker",
         "directory": "ticker",
-        "description": "Tickers are a bit outdated, but a good programming exercise. Mine runs from right to left, and if you mouseover on one of the titles the ticker stops running, the hyperlink becomes blue and underlined and if clicked the desired information opens in a new tab. The programming is in vanilla JavaScript with event listeners, mouseovers, mouseouts, offsetWidth and AnimationFrames among other things. If you wanna deep dive into my ticker you get to read all my texts that got translated into English..."
+        "description": "Tickers are a bit outdated, but a good programming exercise. Mine runs from right to left, and if you mouseover on one of the titles the ticker stops running, the hyperlink becomes blue and underlined and if clicked the desired information opens in a new tab. The programming is in vanilla JavaScript with event listeners, mouseovers, mouseouts, offsetWidth and AnimationFrames among other things. If you wanna deep dive into my ticker you get to read all my texts that got translated into English... In a later exercise we added a backend and fetched live data from existing twitter-accounts."
     },
     {
         "name": "Incremental Search",
