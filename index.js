@@ -54,4 +54,4 @@ app.get("/:project/description", (req, res) => {
     }
 });
 
-app.listen(8080, () => console.log("Server Listening!"));
+app.listen(process.env.PORT || 8080, () => console.log("Server Listening!"));
