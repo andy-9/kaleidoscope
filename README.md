@@ -19,5 +19,3 @@
 ## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
-© <a href="https://andreashechler.com/" target="_blank">Andreas Hechler</a> 2020

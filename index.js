@@ -31,7 +31,6 @@ app.get("/:project/description", (req, res) => {
     // console.log(":project:", req.params.project);
     // console.log("project variable:", project)
     const selectedProject = projects.find((item) => item.directory == project); // `projects` refers to the the `const` on top (json-file), `find()` is a method on arrays, `item` is the value of the array at each point in the array during the iteration
-    // console.log("selected project:", selectedProject);
 
     res.render("description", {
         layout: "main",
