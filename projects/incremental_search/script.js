@@ -11,15 +11,17 @@
         }
 
         $.ajax({
-            url: "http://spicedworld.herokuapp.com/",
+            // url: "http://spicedworld.herokuapp.com/",
+            url: "/countries.json",
             method: "GET",
             // as the 'query' inside ajax, pass to it whatever the user typed in the input field
             // make "a" dynamic!! not string, but variable!
-            data: {
-                q: val
-            },
+            // data: {
+            //     q: val
+            // },
             // success only runs when we get a positive response from API
-            success: function(matches) {
+            success: function (results) {
+                const matches = results.matches.filter(x => x.toLowerCase().includes(val.toLowerCase()))
                 console.log("matches: ", matches);
 
                 var resultsHtml = "";
